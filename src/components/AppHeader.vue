@@ -1,11 +1,25 @@
 <template>
   <header>
     <div>
-      <div class="logo-container"></div>
+      <div class="logo-container">
+        <img src="../assets/dc-logo.png" alt="" />
+      </div>
     </div>
-    <div class="header-list">
-      <ul></ul>
+    <div>
+      <ul class="header-list">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
     </div>
+    <div class="header-bottom"></div>
   </header>
 </template>
 
@@ -16,18 +30,27 @@ export default {
 </script>
 
 <style lang="scss">
-.logo-container {
+header {
   height: 100px;
-  width: 100px;
-  background-color: yellowgreen;
-  float: left;
-  margin-left: 100px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+}
+.logo-container img {
+  margin-left: 150px;
+  height: 70px;
+  width: 70px;
+  margin-top: 15px;
 }
 .header-list {
-  height: 100px;
-  width: 300px;
-  background-color: red;
-  float: right;
-  margin-right: 100px;
+  margin-left: 400px;
+}
+.header-list li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+  line-height: 100px;
 }
 </style>
