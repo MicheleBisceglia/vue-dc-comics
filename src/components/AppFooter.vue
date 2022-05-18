@@ -1,6 +1,5 @@
 <template>
   <footer>
-    <div class="pre-footer"></div>
     <div class="footer">
       <div class="footer-list">
         <div class="col">
@@ -46,7 +45,7 @@
       <div class="footer-logo"></div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-btn"></div>
+      <button class="footer-btn"></button>
       <div class="social"></div>
     </div>
   </footer>
@@ -94,16 +93,18 @@ export default {
   display: flex;
   flex-wrap: wrap;
   & .footer-btn {
-      height: 100%;
-      width: 150px;
-      margin-left: 200px;
-      background-color: red;
+    height: 40%;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 15px;
+    background-color: #1c1c1c;
+    border: solid 2px #0282f9;
   }
   & .social {
-      height: 100%;
-      width: 250px;
-      margin-left: 30%;
-      background-color: yellowgreen;
+    height: 100%;
+    width: 250px;
+    margin-left: 30%;
+    background-color: yellowgreen;
   }
 }
 

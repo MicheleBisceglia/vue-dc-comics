@@ -2,6 +2,7 @@
   <div id="app">
     <AppHeader />
     <main></main>
+    <AppPrefooter />
     <AppFooter />
   </div>
 </template>
@@ -9,12 +10,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppPrefooter from "./components/AppPrefooter.vue";
 
 export default {
   name: "App",
   components: {
     AppHeader,
     AppFooter,
+    AppPrefooter,
   },
 };
 </script>
