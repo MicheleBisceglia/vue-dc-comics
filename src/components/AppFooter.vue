@@ -45,7 +45,10 @@
       </div>
       <div class="footer-logo"></div>
     </div>
-    <div class="footer-bottom"></div>
+    <div class="footer-bottom">
+      <div class="footer-btn"></div>
+      <div class="social"></div>
+    </div>
   </footer>
 </template>
 
@@ -72,7 +75,7 @@ export default {
   & .footer-list {
     display: flex;
     max-width: 200px;
-    padding-left: 20%;
+    padding-left: 200px;
     padding-top: 50px;
     padding-right: 30%;
   }
@@ -88,6 +91,20 @@ export default {
 .footer-bottom {
   height: 70px;
   background-color: #1c1c1c;
+  display: flex;
+  flex-wrap: wrap;
+  & .footer-btn {
+      height: 100%;
+      width: 150px;
+      margin-left: 200px;
+      background-color: red;
+  }
+  & .social {
+      height: 100%;
+      width: 250px;
+      margin-left: 30%;
+      background-color: yellowgreen;
+  }
 }
 
 .col {
