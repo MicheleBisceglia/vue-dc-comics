@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <AppHeader />
-    <main>
-    </main>
+    <main></main>
     <AppFooter />
   </div>
 </template>
@@ -15,7 +14,7 @@ export default {
   name: "App",
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
   },
 };
 </script>
