@@ -12,7 +12,7 @@
           :key="index"
           :class="{ active: item.active }"
         >
-          <span>{{ item.text }}</span>
+          <a>{{ item.text }}</a>
         </li>
       </ul>
     </div>
@@ -83,6 +83,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../style/common.scss";
+
 header {
   height: 100px;
   width: 100%;
@@ -101,7 +103,6 @@ header {
   margin-left: 300px;
 }
 .header-list li {
-  list-style: none;
   display: inline;
   margin-left: 10px;
   text-transform: uppercase;
@@ -109,7 +110,7 @@ header {
   line-height: 100px;
 
   &.active {
-    border-bottom: solid #0b58a0 5px;
+    border-bottom: solid #0282f9 5px;
   }
 }
 </style>
