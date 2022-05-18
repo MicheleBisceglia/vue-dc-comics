@@ -45,7 +45,7 @@
       <div class="footer-logo"></div>
     </div>
     <div class="footer-bottom">
-      <button class="footer-btn"></button>
+      <button class="footer-btn">Sign-up now!</button>
       <div class="social"></div>
     </div>
   </footer>
@@ -73,8 +73,8 @@ export default {
   flex-wrap: wrap;
   & .footer-list {
     display: flex;
-    max-width: 200px;
-    padding-left: 200px;
+    width: 200px;
+    margin-left: 200px;
     padding-top: 50px;
     padding-right: 30%;
   }
@@ -86,6 +86,11 @@ export default {
     background-repeat: no-repeat;
   }
 }
+@media screen and (max-width: 880px) {
+ .footer-logo {
+   display: none;
+ }
+ }
 
 .footer-bottom {
   height: 70px;
@@ -93,12 +98,15 @@ export default {
   display: flex;
   flex-wrap: wrap;
   & .footer-btn {
-    height: 40%;
+    height: 50%;
     width: 100px;
     margin-left: 200px;
-    margin-top: 15px;
+    margin-top: 20px;
+    font-size: 70%;
     background-color: #1c1c1c;
     border: solid 2px #0282f9;
+    color: white;
+    text-transform: uppercase;
   }
   & .social {
     height: 100%;

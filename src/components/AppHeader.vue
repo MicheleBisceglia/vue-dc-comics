@@ -92,6 +92,7 @@ header {
   position: fixed;
   z-index: 999;
   background-color: white;
+  min-width: 900px;
 }
 .logo-container img {
   margin-left: 150px;

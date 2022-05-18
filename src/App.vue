@@ -24,7 +24,9 @@ export default {
 
 <style lang="scss">
 @import "./style/common.scss";
-
+#app {
+  min-width: 900px
+}
 main {
   background-color: #1c1c1c;
   height: 200px;
