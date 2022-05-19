@@ -87,10 +87,10 @@ export default {
   }
 }
 @media screen and (max-width: 880px) {
- .footer-logo {
-   display: none;
- }
- }
+  .footer-logo {
+    display: none;
+  }
+}
 
 .footer-bottom {
   height: 70px;
