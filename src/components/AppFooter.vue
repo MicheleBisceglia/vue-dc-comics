@@ -112,10 +112,9 @@ export default {
     height: 100%;
     width: 250px;
     margin-left: 30%;
-    background-color: yellowgreen;
+    border: solid 1px white;//debug
   }
 }
-
 .col {
   margin-left: 40px;
 }

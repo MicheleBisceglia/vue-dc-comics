@@ -1,26 +1,23 @@
 <template>
- <div class="serie-list">
-     <div class="list">
-        <div class="series"
-        v-for="(item, index) in film"
+  <section class="serie">
+          <AppSerie
+          v-for="(item, index) in comics"
           :key="index"
-          :seriesObj="item">
-            <img :src="item.thumb" alt="series-thumb">
-            <h4>{{ item.series }}</h4>
-        </div>
-    </div>   
- </div>
+          :comicsObj="item"
+        />
+  </section>
 </template>
 
 <script>
+import AppSerie from "./AppSerie.vue";
 export default {
-  name: "AppMain",
-   props: {
-    seriesObj: Object,
+  name: "SerieList",
+  components: {
+    AppSerie,
   },
-  data: function() {
-      return {
-      film: [
+  data: function () {
+    return { 
+      comics: [
   {
     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
     "price": "$19.99",
@@ -93,32 +90,19 @@ export default {
     "series": "Catwoman",
     "type": "graphic novel"
   }
-]
-  }
-  }
+],
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../style/common.scss";
-.serie-list {
-  background-color: #1c1c1c;
-  & .series {
-      width: calc(100% / 6);
-      background-color: #1c1c1c;
-      color: white;
-      margin-top: 50px;
-      text-align: center;
-     
-  }
-  & .series img {
-    height: 80%;
-    width: 80%;
-  }
-}
-.list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  }
+.serie {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}  
 </style>
+
+
+
